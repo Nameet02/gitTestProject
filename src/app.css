@@ -1,0 +1,21 @@
+ul{
+  display: flex ;
+  gap: 50px;
+  height: 40px;
+  align-items: center;
+  margin: 0px !important;
+  list-style-type: none;
+}
+li{
+font-size: large;
+color: black;
+height: 100%;
+}
+.tabs{
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px gray ;
+}
+
+.active{
+  border-bottom: 5px solid rgb(247, 11, 11);
+}
