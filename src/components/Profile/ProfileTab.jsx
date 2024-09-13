@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { tabNames, tabData } from "../data/data";
+import { tabNames, tabData } from "../../data/data";
 
 const ProfileTab = () => {
   const [activeTab, setActiveTab] = useState("Progress");
