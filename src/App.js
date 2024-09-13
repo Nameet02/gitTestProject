@@ -6,6 +6,7 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import ShopPage from "./pages/ShopPage";
 import AboutPage from "./pages/AboutPage";
+import ProductDetailsPage from "./pages/ProductDetailsPage";
 function App() {
   return (
     <React.Fragment>
@@ -16,6 +17,7 @@ function App() {
           <Route path="/shop" element={<ShopPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
+          <Route path="/product-details" element={<ProductDetailsPage/>} />
         </Routes>
       </BrowserRouter>
     </React.Fragment>
