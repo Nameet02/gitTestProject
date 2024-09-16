@@ -7,20 +7,26 @@ import RegisterPage from "./pages/RegisterPage";
 import ShopPage from "./pages/ShopPage";
 import AboutPage from "./pages/AboutPage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
-import Footer from "./components/layoutComponents/Footer";
-import NavBar from "./components/layoutComponents/NavBar";
+import Layout from "./components/layoutComponents/Layout";
 function App() {
   return (
     <React.Fragment>
       <BrowserRouter>
-      {/* <NavBar /> */}
+        {/* <NavBar /> */}
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route
+            path="/"
+            element={
+              <Layout>
+                <HomePage />
+              </Layout>
+            }
+          />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/shop" element={<ShopPage />} />
-          <Route path="/login" element={<LoginPage />} />
+          <Route path="/login" element={<Layout><LoginPage /></Layout>} />
           <Route path="/register" element={<RegisterPage />} />
-          <Route path="/product-details" element={<ProductDetailsPage/>} />
+          <Route path="/product-details" element={<ProductDetailsPage />} />
         </Routes>
       </BrowserRouter>
     </React.Fragment>
