@@ -7,10 +7,13 @@ import RegisterPage from "./pages/RegisterPage";
 import ShopPage from "./pages/ShopPage";
 import AboutPage from "./pages/AboutPage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
+import Footer from "./components/layoutComponents/Footer";
+import NavBar from "./components/layoutComponents/NavBar";
 function App() {
   return (
     <React.Fragment>
       <BrowserRouter>
+      {/* <NavBar /> */}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
